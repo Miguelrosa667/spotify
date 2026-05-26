@@ -61,3 +61,23 @@ class _ChoseModeScreenState extends State<ChoseModeScreen> {
                         ),
                       ),
                       const SizedBox(height: 30),
+
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          GestureDetector(
+                            onTap: () => setState(() => _selectedMode = 0),
+                            child: Column(
+                              children: [
+                                Container(
+                                  width: 70,
+                                  height: 70,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                      color: _selectedMode == 0
+                                          ? const Color(0xFF1DB954)
+                                          : Colors.white54,
+                                      width: 2,
+                                    ),
+                                  ),

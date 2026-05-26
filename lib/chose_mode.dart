@@ -145,6 +145,35 @@ class _ChoseModeScreenState extends State<ChoseModeScreen> {
                         ],
                       ),
 
-                      
+                      const SizedBox(height: 36),
+
+                      SizedBox(
+                        width: double.infinity,
+                        height: 56,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushReplacement(
+                              context,
+                              PageRouteBuilder(
+                                pageBuilder: (_, __, ___) => HomePage(
+                                  isDarkMode: _selectedMode == 0,
+                                ),
+                                transitionsBuilder: (_, animation, __, child) {
+                                  return FadeTransition(
+                                      opacity: animation, child: child);
+                                },
+                                transitionDuration:
+                                    const Duration(milliseconds: 500),
+                              ),
+                            );
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFF1DB954),
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            elevation: 0,
+                          ),
  
  

@@ -121,5 +121,30 @@ class _ChoseModeScreenState extends State<ChoseModeScreen> {
                                       width: 2,
                                     ),
                                   ),
-                                  
+                                  child: Icon(
+                                    Icons.wb_sunny_outlined,
+                                    color: _selectedMode == 1
+                                        ? const Color(0xFF1DB954)
+                                        : Colors.white70,
+                                    size: 32,
+                                  ),
+                                ),
+                                const SizedBox(height: 10),
+                                Text(
+                                  'Light Mode',
+                                  style: TextStyle(
+                                    color: _selectedMode == 1
+                                        ? Colors.white
+                                        : Colors.white60,
+                                    fontSize: 14,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+
+                      
+ 
  

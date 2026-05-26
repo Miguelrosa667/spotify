@@ -30,3 +30,34 @@ class _ChoseModeScreenState extends State<ChoseModeScreen> {
               color: Colors.transparent
             ),
           ),
+
+          SafeArea(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/logo.png'),
+                        SizedBox(height: 10,),
+                        SizedBox(height: 20,)
+                    ],
+                  ),
+                ),
+ 
+                const Spacer(),
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  child: Column(
+                    children: [
+                      const Text(
+                        'Choose Mode',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const SizedBox(height: 30),

@@ -175,5 +175,26 @@ class _ChoseModeScreenState extends State<ChoseModeScreen> {
                             ),
                             elevation: 0,
                           ),
+                          child: const Text(
+                            'Continue',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 30),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
  
  

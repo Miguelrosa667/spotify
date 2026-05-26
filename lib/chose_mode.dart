@@ -17,3 +17,16 @@ class _ChoseModeScreenState extends State<ChoseModeScreen> {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
+
+          Positioned.fill(
+            child: Image.asset(
+              'assets/chose1.png',
+              fit: BoxFit.cover,
+            ),
+          ),
+
+          Positioned.fill(
+            child: Container(
+              color: Colors.transparent
+            ),
+          ),

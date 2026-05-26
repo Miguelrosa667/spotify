@@ -7,3 +7,13 @@ class ChoseModeScreen extends StatefulWidget {
   @override
   State<ChoseModeScreen> createState() => _ChoseModeScreenState();
 }
+
+class _ChoseModeScreenState extends State<ChoseModeScreen> {
+  int _selectedMode = 0;
+ 
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Stack(
+        children: [
